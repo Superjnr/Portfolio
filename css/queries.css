@@ -1,0 +1,212 @@
+/**************************/
+/* Below 1200 */
+/**************************/
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+/**************************/
+/* Below 960 */
+/**************************/
+@media (max-width: 60em) {
+      .about-textbox {
+        margin-top: 1rem;
+      }
+}
+/**************************/
+/* Below 944 */
+/**************************/
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+}
+/**************************/
+/* Below 820 */
+/**************************/
+@media (max-width: 51.25em) {
+      .about-textbox {
+        margin-top: 0rem;
+      }
+      .section-about img {
+        height: 90%;
+        width: 90%;
+      }
+      .section-about .grid {
+        column-gap: 2rem;
+      }
+      .thank-you {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+}
+/* *********************************** */
+/* BELOW 712px 
+/* *********************************** */
+@media (max-width: 44.5em) {
+    .section-about .grid {
+        grid-template-columns: 1fr;
+        row-gap: 3.2rem;
+    }
+      .edu, .experience {
+        width: 80%;
+        margin: 0 8.5rem;
+      }
+      .about {
+        margin-top: 4rem;
+      }
+      .long-copy {
+        margin-top: 3rem;
+        margin-bottom: -5rem;
+      }
+      .logo {
+        font-size: 3rem;
+      }
+}
+/* *********************************** */
+/* BELOW 540px 
+/* *********************************** */
+@media (max-width: 33.75em) {
+  .section-contact {
+    margin-top: 0rem;
+    padding-top: 2rem;
+  }
+    .edu, .experience {
+        margin: 0 6rem;
+      } 
+      .heading-primary {
+        font-size: 3.6rem;
+    }
+    .thank-you {
+      position: absolute;
+      top: 35%;
+      left: 10%;
+    }
+
+     /* mobile navi */
+
+     .btn-mobile-nav {
+      display: block;
+      z-index: 9999;
+    }
+      .main-nav-list{
+        position: fixed;
+        top: 0;
+        left: -110%;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-flow: column;
+        padding: 0 10%;
+        text-align: center;
+        background: #393939;
+        transition: all 0.5s ease-in-out;
+      }
+      .open{
+        left: 0%;
+      }
+      .main-nav-list .main-nav-link{
+        font-size: 3rem;
+        color: transparent;
+        -webkit-text-stroke: .5px #ffffff;
+        font-weight: bolder;
+        position: relative;
+      } 
+      .main-nav-list .main-nav-link::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #353535;
+        transition: .3s linear;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      }
+      .main-nav-list .main-nav-link:hover::before{
+        clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
+      }
+      .fa-bars {
+        -webkit-appearance: none;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        cursor: pointer;
+        z-index: 1010;
+        font-size: 2.4rem;
+      }
+      .fa-bars:checked::before{
+        content: '\f00d';
+        transition: all 0.2s;
+        color: #ffffff;
+      }
+}
+/* *********************************** */
+/* BELOW 480px 
+/* *********************************** */
+@media (max-width: 30em) {
+    .section-contact .grid {
+        display: block;
+      }
+      .contact p {
+        margin-bottom: 3rem;
+      }
+      .logo {
+        font-size: 2.4rem;
+      }
+      .thank-you {
+        position: absolute;
+        left: 5%;
+      }
+}
+/* *********************************** */
+/* BELOW 432px 
+/* *********************************** */
+@media (max-width: 32em) {
+    .edu, .experience {
+        margin: 0 5rem;
+      } 
+      .section-project {
+        margin-top: 8rem;
+        padding-top: 5.2rem;
+      }
+}
+/* *********************************** */
+/* BELOW 414px 
+/* *********************************** */
+@media (max-width: 25.875em) {
+    .heading-primary {
+        font-size: 3rem;
+    }
+    .thank-you {
+      position: absolute;
+      left: 0%;
+    }
+}
+/* *********************************** */
+/* BELOW 390px 
+/* *********************************** */
+@media (max-width: 24.5em) {
+    .section-project {
+        margin-top: 10rem;
+      }
+      .long-copy {
+        margin-bottom: -10rem;
+      }
+}
+/* *********************************** */
+/* BELOW 376px 
+/* *********************************** */
+@media (max-width: 23.5em) {
+    .edu, .experience {
+        margin: 0 3.5rem;
+      }
+      .thank-you {
+        position: absolute;
+        left: 0%;
+        margin: 0 0.5rem;
+      }
+}
