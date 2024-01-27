@@ -304,10 +304,17 @@
   color: #000000;
   transition: all 0.3s;
 }
-.footer-nav-link:hover,
-.footer-nav-link:active {
-  color: #353535;
-  border-bottom: 2px solid #000000;
+.footer-nav-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #353535;
+  margin-top: 3px;
+  display: block;
+}
+.footer-nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
 }
 .footer p {
   font-size: 1.6rem;
