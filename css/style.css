@@ -30,11 +30,19 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: #000000;
+    transition: all 0.2s;
   }
-  .main-nav-link:hover,
-  .main-nav-link:active {
-    color: #353535;
-    border-bottom: 2px solid #000000;
+  .main-nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #353535;
+    margin-top: 3px;
+    display: block;
+  }
+  .main-nav-link:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
   }
 /**************************/
 /* STICKY */
@@ -51,9 +59,17 @@
 .sticky .fa-bars {
   color: #fff;
 }
-.sticky .main-nav-link:hover,
-.sticky .main-nav-link:active {
-  color: #eeebeb;
+.sticky .main-nav-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 3px;
+  display: block;
+}
+.sticky .main-nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
 }
 .fa-bars {
   margin-top: -0.6rem;
